@@ -1,0 +1,279 @@
+body {
+  overflow-y: scroll;
+}
+
+.navbar .container {
+  margin-left: 10px;
+}
+
+/* Set bg Image */
+.bgImage {
+  height: 100vh;
+  background: url("../assets/bg_1.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Make text larger*/
+/* title */
+.hero_title {
+  font-size: 4rem;
+}
+
+/* desc */
+.hero_desc {
+  font-size: 1.5rem;
+}
+
+.container-fluid {
+  color: white;
+  margin-left: 20vw;
+  display: inline;
+
+}
+
+.hero_text {
+  text-align: center;
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 50%) !important;
+}
+
+.img-fluid {
+  height: 550px;
+  width: 450px;
+  position: absolute;
+  top: 20%;
+  left: 65%;
+}
+
+#desc {
+  margin-left: 20px;
+}
+
+/* Remove deafults  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 5em !important;
+}
+
+
+/* ABOUT SECTION  */
+/* this is where we left off, implementing text shadow in about section title */
+/* .about-title {
+  text-shadow: 5px 5px;
+} */
+.about-me{
+  margin-top:10px;
+
+  
+}
+
+.about-me .card{
+  border-style: none;
+  width: 110%;
+  height: 300px;
+  position: relative;
+  right:45px;
+}
+
+.about-me .card .card-header{
+  background-color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-style: none;
+  margin-bottom: 0px;
+}
+.about-me .card .card-body{
+  margin-top: 0px;
+}
+
+#resumebutton{
+  margin-right: 30px;
+}
+
+#resumebutton:hover{
+  background-color: gray;
+  color: white;
+}
+
+#emailbutton:hover{
+  background-color: gray;
+  color: white;
+
+}
+.about-me .card .card-body .card-text{
+  font-size: 22px;
+}
+.about-img {
+  width: 70%;
+  float: right;
+  border-radius: 50%;
+  box-shadow: 0 0 10px;
+  /* border: 10px solid rgb(128, 128, 128, 0.9); */
+  
+}
+
+.about-img:hover {
+  border: 5px solid grey;
+}
+
+.view-portfolio{
+  position: relative;
+  left: 150px;
+  top: 50px;
+}
+/* End of About Section */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  .img-fluid {
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+  }
+
+  .hero_title {
+    font-size: 2.5rem;
+  }
+
+  .hero-text {
+    margin-top: 10em;
+    top: 50%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  .img-fluid {
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+  }
+
+  .hero_desc {
+    font-size: 1rem;
+  }
+
+  .hero-text {
+    margin-top: 10em;
+    top: 50%;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  .img-fluid {
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+  }
+
+  .hero_desc {
+    font-size: 1rem;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .img-fluid {
+    height: 550px;
+    width: 400px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+  }
+
+  .hero_desc {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    margin-top: 0.1em;
+    /* top: 50%; */
+  }
+}
+
+/* Contact me section*/
+.contact-me{
+  width:80%;
+  height: 500px;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+ 
+ 
+}
+#contact-header{
+  text-align: center;
+}
+#contact-header h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+}
+#contact-header p{
+  font-weight: bold;
+  font-style: italic;
+}
+#contact-row{
+  width:100%;
+  height:100%;
+ 
+}
+#contact-col1{
+  width:50%;
+  height:100%;
+ 
+}
+
+#contact-col2{
+  width:50%;
+  height:100%;
+  
+}
+#contact-col2 button{
+  margin-left: 200px;
+}
+input, select, textarea{
+  display: block;
+  width:90%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+select{
+  height:30px;
+}
+
+label{
+  margin-bottom: 0;
+}
